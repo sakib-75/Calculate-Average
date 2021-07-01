@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Average Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+
+<body>
+    <div class="body">
+        <h1>Average Calculator</h1> </br>
+        <input type="number" id="input_num" placeholder="Number of input">
+        <button onclick="createInput()" id="add_btn"><i class="fas fa-plus-circle"></i> Add Input</button>
+        <button onclick="getAverage()" id="avg_btn"><i class="fas fa-check-circle"></i> Average</button>
+
+        <div id="parent"> </div>
+        <h4 class="errorMsg"></h4>
+
+        <table id="Table">
+            <tbody>
+                <tr>
+                    <td>Max</td>
+                    <td id="outputMax"></td>
+                </tr>
+                <tr>
+                    <td>Min</td>
+                    <td id="outputMin"></td>
+                </tr>
+                <tr>
+                    <td>Sum</td>
+                    <td id="outputSum"></td>
+                </tr>
+                <tr>
+                    <td>Average</td>
+                    <td id="outputAvg"></td>
+                </tr>
+                <tr>
+                    <td>Geometric mean</td>
+                    <td id="outputGm"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div id="myChart"></div>
+
+    </div>
+
+</body>
+
+<script src="java script.js"></script>
+
+</html>
