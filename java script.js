@@ -23,15 +23,6 @@ function createInput() {
         document.querySelector(".errorMsg").innerHTML = '';
 
     }
-    //Hide table, chart
-    var x = document.querySelector("#Table");
-    x.style.visibility = "hidden";
-    var y = document.getElementsByTagName("td");
-    for (i = 0; i < y.length; i++) {
-        y[i].style.border = "none";
-    }
-    var z = document.querySelector("#myChart");
-    z.style.visibility = "hidden";
 
 }
 
@@ -87,16 +78,8 @@ function getAverage() {
             avg = Number(sum / input_amount);
             gm = Math.pow(product, 1 / input_amount);
 
-            //Visible table,chart
-            var x = document.querySelector("#Table");
-            x.style.visibility = "visible";
-            var y = document.getElementsByTagName("td");
-            for (i = 0; i < y.length; i++) {
-                y[i].style.border = "1px solid #dddddd";
-            }
-            var z = document.querySelector("#myChart");
-            z.style.visibility = "visible";
-
+            //Visible table
+            visibleTable();
 
             document.querySelector("#outputMax").innerHTML = largest;
             document.querySelector("#outputMin").innerHTML = smallest;
@@ -142,4 +125,13 @@ function getAverage() {
 
 function cleanDiv(div) {
     div.innerHTML = '';
+}
+
+function visibleTable(){
+    var x = document.querySelector("#Table");
+    x.style.display = "initial";
+    var y = document.getElementsByTagName("td");
+    for (i = 0; i < y.length; i++) {
+        y[i].style.border = "1px solid #dddddd";
+    }
 }
