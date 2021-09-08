@@ -130,8 +130,4 @@ function cleanDiv(div) {
 function visibleTable(){
     var x = document.querySelector("#Table");
     x.style.display = "initial";
-    var y = document.getElementsByTagName("td");
-    for (i = 0; i < y.length; i++) {
-        y[i].style.border = "1px solid #dddddd";
-    }
 }
