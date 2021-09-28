@@ -13,7 +13,7 @@ body{
 }
 #myChart {
     height: auto;
-    width: 100%;
+    width: auto;
     margin-top: 10px;
 }
 .input_box {
